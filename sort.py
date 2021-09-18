@@ -3,7 +3,8 @@
 import string
 import random
 
-def sortThis():
+
+def sortLetters():
     userIn = input('how many ranom letters would you like to randomize?').strip()
     useNum = int(userIn)
     randlist = []
@@ -11,11 +12,25 @@ def sortThis():
     for letter in range(useNum):
         randlist.append(random.choice(string.ascii_letters.lower()))
 
-## take every character and compare it with the next character
-    n = 0
-    while n <= len(randlist):
-        print(n)
-        n += 1
+    count = -1
+    print(randlist)
+    while count <= len(randlist):
+
+        taken = min(randlist)
+        indx = randlist.index(taken)
+        popIt = randlist.pop(indx)
+        sorted.append(popIt)
+
+
+        count += 1
+    print(string.digits)
+    return sorted
+
+
+
+
+
+
 
 
 

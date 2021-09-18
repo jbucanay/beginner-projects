@@ -1,4 +1,4 @@
-from sort import sortThis
+from sort import sortLetters
 
 
-sortThis()
+sortLetters()
