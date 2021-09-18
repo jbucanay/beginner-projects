@@ -1,4 +1,6 @@
-from sort import sortLetters
+from sort import sortLetters, sortNumbers
 
 
-sortLetters()
+
+
+sortNumbers()

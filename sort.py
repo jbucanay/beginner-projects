@@ -23,8 +23,27 @@ def sortLetters():
 
 
         count += 1
-    print(string.digits)
-    return sorted
+    print(sorted)
+
+
+
+def sortNumbers():
+    userNums = input('how many random numbers do you want to sort').strip()
+    numsInt = int(userNums)
+    randNums = []
+    sortedNums = []
+    for nums in range(numsInt):
+        randNums.append(random.choice(string.digits))
+    print(randNums)
+    counter = -1
+    while counter <= len(randNums):
+        take = min(set(randNums))
+        indexIt = randNums.index(take)
+        popOff = randNums.pop(indexIt)
+        sortedNums.append(popOff)
+        counter +=1
+    print(sortedNums)
+
 
 
 
