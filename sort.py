@@ -38,9 +38,11 @@ def sortNumbers():
     counter = -1
     while counter <= len(randNums):
         take = min(set(randNums))
+        print(take)
         indexIt = randNums.index(take)
         popOff = randNums.pop(indexIt)
         sortedNums.append(popOff)
+        print(f'{randNums}randNums')
         counter +=1
     print(sortedNums)
 
